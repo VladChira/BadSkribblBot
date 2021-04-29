@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class Main {
 
-    private static String imagePath = "C:\\Users\\Vlad\\Documents\\SkirbblBot\\images\\input.jpg";
-    private static String outputPath = "C:\\Users\\Vlad\\Documents\\SkirbblBot\\images\\output.jpg";
+    private static String imagePath = System.getProperty("user.dir")+"\\images\\input.jpg";
+    private static String outputPath = System.getProperty("user.dir")+"\\images\\output.jpg";
 
     private static ArrayList<ColorSlot> colors;
 
@@ -16,6 +16,7 @@ public class Main {
     private static int finalHeight = 600;
 
     private static int pixelInterval = 5; //draw each 5 pixels
+
     private static int offsetX = 477;
     private static int offsetY = 222;
 
